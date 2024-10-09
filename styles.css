@@ -12,7 +12,6 @@ h1 {
     color: #81cfee;
 }
 
-
 /* フォームグループのマージンとフレックスボックス設定 */
 .form-group {
     margin-bottom: 15px;
@@ -58,7 +57,7 @@ input[type="file"] {
 button[type="button"] {
     font-size: 16px;
     padding: 2px 40px; /* 参照ボタンを元に戻す */
-    background-color: #007bff; /* ボタンの背景色を青に */
+    background-color: #1661b1; /* ボタンの背景色を青に */
     color: #fff; /* ボタンのテキスト色を白に */
     border: none;
     border-radius: 4px; /* 角を丸く */
@@ -67,7 +66,7 @@ button[type="button"] {
 
 /* ホバー時のスタイルを追加 */
 button[type="button"]:hover {
-    background-color: #0056b3; /* ホバー時の背景色を濃い青に */
+    background-color: #57a3f3; /* ホバー時の背景色を濃い青に */
 }
 
 /* ボタンのコンテナのスタイルを設定（センター配置） */
@@ -90,7 +89,7 @@ button[type="button"]:hover {
 
 /* 取消ボタンのホバー時のスタイルを追加 */
 .buttons button[type="reset"]:hover {
-    background-color: #ff6f61; /* ホバー時の背景色を明るい赤系に */
+    background-color: #f58980; /* ホバー時の背景色を明るい赤系に */
 }
 
 /* 投稿ボタンのスタイルを設定 */
@@ -101,4 +100,32 @@ button[type="button"]:hover {
 /* 投稿ボタンのホバー時のスタイルを追加 */
 .buttons button[type="submit"]:hover {
     background-color: #81c7be; /* ホバー時の背景色を明るい緑系に */
+}
+
+/* 境界線と投稿のスタイルを追加 */
+.separator {
+    border-top: 2px solid #868282 !important;
+    margin: 20px 0 !important;
+    height: 2px !important; /* 高さを追加 */
+}
+
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.delete-button {
+    font-size: 16px;
+    padding: 2px 40px;
+    margin-right: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
 }
