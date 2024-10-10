@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>掲示板 - 投稿完了</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         echo '<p>タイトル: ' . $title . '</p>';
         echo '<p>内容: ' . nl2br($content) . '</p>';
         echo '<p>画像ファイル名: ' . htmlspecialchars($_FILES['image']['name'] ?? 'なし') . '</p>';
-        echo '<button onclick="window.location.href=\'index.php\'">最初の画面に戻る</button>';
+        echo '<button class="return-button onclick="window.location.href=\'index.php\'">最初の画面に戻る</button>';
     } catch (PDOException $e) {
         echo 'データベース接続に失敗しました: ' . $e->getMessage();
     }
