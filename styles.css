@@ -129,3 +129,18 @@ button[type="button"]:hover {
 .delete-button:hover {
     background-color: #d32f2f;
 }
+
+.return-button {
+    font-size: 16px;
+    padding: 2px 40px;
+    margin-right: 10px;
+    background-color: #279752;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: #65e797;
+}
